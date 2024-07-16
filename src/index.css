@@ -5,30 +5,22 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://res.cloudinary.com/dkgl9ogsc/image/upload/v1720185178/UniBurgerIMGS/ctz1wfbzysygozb1ez3t.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
 }
-a:hover {
-  color: #535bf2;
-}
 
-/* body {
+body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-} */
+}
 
 h1 {
   font-size: 3.2em;
@@ -36,22 +28,31 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 0.9rem;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: rgba(229, 217, 45, 1);
+  color: black;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: 0.1s;
 }
 button:hover {
-  border-color: #646cff;
+  opacity: 0.7;
+  transform: scale(0.95);
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+input {
+  all: unset;
+  background-color: rgba(255, 255, 255, 0.293);
+  padding: 10px;
+  height: 20px;
+  color: rgba(229, 217, 45, 1);
+  border-bottom: 4px solid rgba(229, 217, 45, 1);
+}
+input::placeholder {
+  color: rgba(229, 217, 45, 0.418); /* Cambia este color al que prefieras */
 }
 
 @media (prefers-color-scheme: light) {

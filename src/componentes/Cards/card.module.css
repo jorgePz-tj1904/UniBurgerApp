@@ -1,0 +1,53 @@
+.conteiner {
+  background-color: rgba(0, 0, 0, 0.707);
+  width: 250px;
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 15px;
+  color: rgba(229, 217, 45, 1);
+}
+
+.conteiner h1 {
+  font-size: 20px;
+}
+
+.img {
+  width: 200px;
+  height: 170px;
+  background-color: gray;
+  border-radius: 20px;
+}
+
+.buyConteiner {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 40px;
+}
+
+.masInfo {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgba(229, 217, 45, 1);
+  color: black;
+  cursor: pointer;
+}
+.masInfo:hover {
+  opacity: 0.7;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+#carrito:hover {
+  opacity: 0.7;
+  transform: scale(0.95);
+  cursor: pointer;
+}

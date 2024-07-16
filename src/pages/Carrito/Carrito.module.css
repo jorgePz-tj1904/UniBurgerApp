@@ -1,0 +1,106 @@
+.Conteiner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  min-height: 400px;
+  background-color: rgba(0, 0, 0, 0.707);
+  text-align: center;
+  color: white;
+  z-index: 10;
+  border-radius: 20px;
+  padding: 20px;
+  color: rgba(229, 217, 45, 1);
+}
+.Conteiner img {
+  filter: drop-shadow(-7px 4px 0px rgba(229, 217, 45, 1));
+}
+
+.listaConteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.lista {
+  list-style-type: none; /* Elimina los estilos de lista */
+  padding: 0; /* Elimina el padding por defecto */
+  margin: 10px; /* Elimina el margen por defecto */
+  margin-right: 200px;
+  width: 100%;
+  text-align: left; /* Alinea el texto a la derecha */
+}
+.CardCarrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(229, 217, 45, 0.573);
+}
+#iconoDelete {
+  font-size: 30px;
+  margin-top: 20px;
+  color: red;
+}
+#iconoDelete:hover {
+  opacity: 0.7;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+@keyframes cargando {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.buttonOf{
+  display: none;
+}
+
+.wasapBtn{
+  color: white;
+  background-color: green;
+  padding: 13px 20px;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: .2s;
+}
+.wasapBtn:hover{
+  opacity: .7;
+  transform: scale(0.95);
+}
+
+.conteiner_iconoCargando {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+#iconoCargando {
+  border: 10px solid transparent;
+  border-top-color: rgba(229, 217, 45, 1);
+  border-bottom-color: black;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  animation: cargando 1.3s infinite linear;
+}
+.volverBtn{
+  position: absolute;
+  left: 0;
+  color: black;
+  background-color: rgba(229, 217, 45, 1);
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 10px;
+}
+@media (max-width: 700px) {
+  .Conteiner{
+    width: 300px;
+  }
+}

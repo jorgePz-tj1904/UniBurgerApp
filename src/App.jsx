@@ -1,6 +1,10 @@
 import { Route, Routes } from 'react-router-dom'
 import Home from './Home'
-import Info from './pages/Info'
+import Info from './pages/Info/Info'
+import Dashboard from './pages/Dashboard/Dashboard'
+import Register from './pages/Register/Register'
+import Edit from './pages/EditProfile/Edit'
+import Carrito from './pages/Carrito/Carrito'
 
 function App() {
 
@@ -10,6 +14,10 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/detalles/:id' element={<Info/>}/>
+      <Route path='/dashboard' element={<Dashboard/>}/>
+      <Route path='/register' element={<Register/>}/>
+      <Route path='/editarPerfil/:usuario' element={<Edit/>}/>
+      <Route path='/carrito' element={<Carrito/>}/>
     </Routes>
   )
 }
